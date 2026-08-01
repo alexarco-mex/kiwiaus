@@ -10,7 +10,7 @@ content="width=device-width, initial-scale=1.0"
 
 <meta
 name="description"
-content="KiwiAus Business Australia provides professional Australian company formation, corporate services and business support for international clients and trusted business partners."
+content="KiwiAus Business Australia provides professional Australian business solutions for international clients and trusted business partners."
 >
 
 <title>KiwiAus Business Australia | Australian Business Solutions</title>
@@ -28,7 +28,7 @@ body {
 margin: 0;
 min-height: 100vh;
 background:
-radial-gradient(circle at top, #17365d 0%, #07172d 48%, #020812 100%);
+radial-gradient(circle at top, #15345c 0%, #07172d 48%, #030b16 100%);
 color: #ffffff;
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
@@ -37,7 +37,7 @@ text-align: center;
 .top-message {
 width: 100%;
 padding: 11px 20px;
-background: #c99732;
+background: #c9962f;
 color: #07172d;
 font-size: 13px;
 font-weight: 700;
@@ -55,21 +55,21 @@ padding: 34px 20px 45px;
 .main-image {
 display: block;
 width: 30%;
-max-width: 390px;
+max-width: 380px;
 min-width: 240px;
 height: auto;
 margin: 0 auto 28px;
+padding: 8px;
 background: #ffffff;
-border: 4px solid #ffffff;
-border-radius: 14px;
-box-shadow: 0 16px 45px rgba(0, 0, 0, 0.42);
+border-radius: 16px;
+box-shadow: 0 16px 45px rgba(0, 0, 0, 0.38);
 }
 
 h1 {
 margin: 8px 0 6px;
-color: #ffffff;
 font-size: 42px;
 line-height: 1.15;
+color: #ffffff;
 }
 
 h2 {
@@ -80,63 +80,37 @@ font-weight: 500;
 }
 
 .intro {
-max-width: 770px;
+max-width: 760px;
 margin: 0 auto 26px;
 color: #dce4ef;
 font-size: 18px;
 line-height: 1.65;
 }
 
-.service-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 16px;
-max-width: 900px;
-margin: 30px auto;
-}
-
-.service-card {
-padding: 22px 15px;
-border: 1px solid rgba(215, 173, 85, 0.55);
-border-radius: 12px;
-background: rgba(255, 255, 255, 0.04);
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-}
-
-.service-icon {
-display: block;
-margin-bottom: 10px;
-font-size: 28px;
-}
-
-.service-card h3 {
-margin: 0 0 8px;
-color: #d7ad55;
-font-size: 17px;
-}
-
-.service-card p {
-margin: 0;
-color: #dce4ef;
-font-size: 14px;
-line-height: 1.5;
-}
-
-.registrations {
-max-width: 860px;
+.services {
+max-width: 880px;
 margin: 28px auto;
-padding: 17px;
+padding: 20px 18px;
 border-top: 1px solid rgba(215, 173, 85, 0.5);
 border-bottom: 1px solid rgba(215, 173, 85, 0.5);
+color: #ffffff;
+font-size: 16px;
+line-height: 1.9;
+}
+
+.services-primary {
+font-weight: 600;
+}
+
+.services-secondary {
 color: #d7ad55;
 font-size: 15px;
-font-weight: 600;
-letter-spacing: 0.6px;
+letter-spacing: 0.5px;
 }
 
 .trust {
 margin: 27px 0 20px;
-color: #ffffff;
+color: #d7ad55;
 font-size: 15px;
 font-weight: 700;
 letter-spacing: 1.5px;
@@ -148,9 +122,9 @@ margin-top: 12px;
 
 .contact a {
 display: inline-block;
-margin: 8px;
+margin: 8px 8px;
 padding: 12px 18px;
-border: 1px solid rgba(215, 173, 85, 0.7);
+border: 1px solid rgba(215, 173, 85, 0.6);
 border-radius: 8px;
 color: #ffffff;
 background: rgba(255, 255, 255, 0.04);
@@ -170,7 +144,7 @@ color: #9eabbc;
 font-size: 13px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
 .container {
 padding: 26px 16px 38px;
 }
@@ -178,7 +152,7 @@ padding: 26px 16px 38px;
 .main-image {
 width: 65%;
 min-width: 220px;
-max-width: 350px;
+max-width: 340px;
 }
 
 h1 {
@@ -193,15 +167,19 @@ font-size: 20px;
 font-size: 16px;
 }
 
-.service-grid {
-grid-template-columns: 1fr;
-max-width: 430px;
+.services {
+font-size: 14px;
+line-height: 1.8;
+}
+
+.services-secondary {
+font-size: 13px;
 }
 
 .contact a {
 display: block;
 width: 100%;
-max-width: 340px;
+max-width: 330px;
 margin: 10px auto;
 }
 }
@@ -232,7 +210,7 @@ Our new website is currently under development
 <main class="container">
 
 <img
-src="IMG_3917.jpg"
+src="IMG_3917.jpeg"
 alt="KiwiAus Group Australia"
 class="main-image"
 >
@@ -242,41 +220,21 @@ class="main-image"
 <h2>Australian Business Solutions</h2>
 
 <p class="intro">
-Professional Australian business solutions for international clients,
-entrepreneurs and trusted business partners seeking reliable corporate
-support and long-term opportunities in Australia.
+Connecting international clients and trusted business partners
+with professional Australian corporate solutions, practical support
+and long-term business opportunities.
 </p>
 
-<section class="service-grid">
+<div class="services">
 
-<div class="service-card">
-<span class="service-icon">🏢</span>
-<h3>Company Formation</h3>
-<p>
-Professional support for establishing Australian company structures.
-</p>
+<div class="services-primary">
+Company Formation • Corporate Services • Business Support • International Partnerships
 </div>
 
-<div class="service-card">
-<span class="service-icon">📄</span>
-<h3>Corporate Services</h3>
-<p>
-Corporate documentation, company changes and practical business support.
-</p>
+<div class="services-secondary">
+ABN • ACN • ASIC • AUSTRAC • Compliance
 </div>
 
-<div class="service-card">
-<span class="service-icon">🌏</span>
-<h3>International Partnerships</h3>
-<p>
-Reliable cooperation with clients and professional partners worldwide.
-</p>
-</div>
-
-</section>
-
-<div class="registrations">
-ABN • ACN • ASIC • AUSTRAC • COMPLIANCE • BUSINESS SUPPORT
 </div>
 
 <p class="trust">
