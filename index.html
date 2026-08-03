@@ -34,21 +34,21 @@ font-family: Arial, Helvetica, sans-serif;
 
 .top-line {
 width: 100%;
-height: 6px;
+height: 3px;
 background: #c58a28;
 }
 
 .page {
 display: flex;
-min-height: calc(100vh - 6px);
+min-height: calc(100vh - 3px);
 align-items: center;
 justify-content: center;
-padding: 35px 20px;
+padding: 30px 20px;
 }
 
 .main-box {
 width: 100%;
-max-width: 950px;
+max-width: 1050px;
 text-align: center;
 }
 
@@ -58,55 +58,57 @@ width: 23%;
 max-width: 290px;
 min-width: 190px;
 height: auto;
-margin: 0 auto 25px;
+margin: 0 auto 24px;
 background: #ffffff;
-border: 1px solid #dfe4e9;
-border-radius: 14px;
-box-shadow: 0 10px 28px rgba(30, 50, 70, 0.10);
+border: 1px solid #e3e6e9;
+border-radius: 12px;
+box-shadow: 0 8px 22px rgba(30, 50, 70, 0.08);
 }
 
 h1 {
 margin: 0 0 8px;
 color: #111820;
-font-size: 40px;
+font-size: 39px;
+font-weight: 600;
 line-height: 1.15;
 }
 
 .subtitle {
-margin-bottom: 13px;
+margin-bottom: 12px;
 color: #b77d18;
-font-size: 21px;
-font-weight: 700;
+font-size: 20px;
+font-weight: 500;
 }
 
 .welcome {
-margin: 0 0 35px;
-color: #687282;
-font-size: 15px;
-line-height: 1.6;
+margin: 0 0 30px;
+color: #747d88;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.5;
 }
 
 .language-grid {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 19px;
+grid-template-columns: repeat(4, 1fr);
+gap: 14px;
 width: 100%;
 margin: 0 auto;
 }
 
 .language-card {
 display: flex;
-min-height: 145px;
+min-height: 82px;
 align-items: center;
 justify-content: center;
-padding: 25px 18px;
+padding: 16px 14px;
 background: #ffffff;
-border: 1px solid #dfe4e9;
-border-top: 5px solid #c58a28;
-border-radius: 13px;
+border: 1px solid #e4e7ea;
+border-top: 3px solid #c58a28;
+border-radius: 10px;
 color: #064a78;
 text-decoration: none;
-box-shadow: 0 9px 25px rgba(30, 50, 70, 0.07);
+box-shadow: 0 6px 18px rgba(30, 50, 70, 0.05);
 transition:
 transform 0.2s ease,
 box-shadow 0.2s ease,
@@ -114,39 +116,52 @@ border-color 0.2s ease;
 }
 
 .language-card:hover {
-transform: translateY(-6px);
+transform: translateY(-4px);
 border-color: #c58a28;
-box-shadow: 0 16px 34px rgba(30, 50, 70, 0.14);
+box-shadow: 0 12px 26px rgba(30, 50, 70, 0.10);
 }
 
 .language-card span {
-font-size: 24px;
-font-weight: 750;
-line-height: 1.3;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.2px;
 }
 
 .contact {
-margin-top: 30px;
+margin-top: 27px;
 color: #7a8490;
 font-size: 13px;
 }
 
 .contact a {
 color: #064a78;
-font-weight: 700;
+font-weight: 500;
 text-decoration: none;
 }
 
-footer {
-margin-top: 25px;
-color: #8a929c;
-font-size: 11px;
+.contact a:hover {
+color: #c58a28;
 }
 
-@media (max-width: 720px) {
+footer {
+margin-top: 22px;
+color: #8a929c;
+font-size: 11px;
+font-weight: 400;
+}
+
+@media (max-width: 900px) {
+.language-grid {
+grid-template-columns: repeat(2, 1fr);
+max-width: 650px;
+}
+}
+
+@media (max-width: 620px) {
 .page {
 align-items: flex-start;
-padding-top: 28px;
+padding-top: 26px;
 }
 
 .logo {
@@ -157,19 +172,32 @@ max-width: 280px;
 
 h1 {
 font-size: 30px;
+font-weight: 600;
 }
 
 .subtitle {
-font-size: 19px;
+margin-bottom: 11px;
+font-size: 18px;
+}
+
+.welcome {
+margin-bottom: 26px;
 }
 
 .language-grid {
 grid-template-columns: 1fr;
 max-width: 430px;
+gap: 12px;
 }
 
 .language-card {
-min-height: 92px;
+min-height: 68px;
+padding: 13px 12px;
+border-top-width: 2px;
+}
+
+.language-card span {
+font-size: 19px;
 }
 }
 
@@ -183,12 +211,21 @@ h1 {
 font-size: 27px;
 }
 
+.subtitle {
+font-size: 17px;
+}
+
 .welcome {
-margin-bottom: 28px;
+margin-bottom: 24px;
+}
+
+.language-card {
+min-height: 64px;
 }
 
 .language-card span {
-font-size: 22px;
+font-size: 18px;
+font-weight: 400;
 }
 }
 </style>
@@ -232,6 +269,10 @@ Select your language
 
 <a href="/zh-hk/" class="language-card">
 <span>香港中文</span>
+</a>
+
+<a href="/de/" class="language-card">
+<span>Deutsch</span>
 </a>
 
 </section>
