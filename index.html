@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 
@@ -10,41 +10,53 @@ content="width=device-width, initial-scale=1.0"
 
 <meta
 name="description"
-content="KiwiAus Business Australia — professional Australian business solutions for international clients and business partners."
+content="KiwiAus Business Australia предоставляет профессиональные решения по регистрации и подготовке австралийских компаний для международных клиентов и деловых партнёров."
 >
 
-<title>KiwiAus Business Australia</title>
+<title>KiwiAus Business Australia | Бизнес-решения в Австралии</title>
 
 <style>
 * {
 box-sizing: border-box;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
 margin: 0;
-min-height: 100vh;
-background: #ffffff;
-color: #111111;
+background: #f6f8fa;
+color: #172033;
 font-family: Arial, Helvetica, sans-serif;
+}
+
+.language-menu {
+width: 100%;
+padding: 15px 20px;
+background: #ffffff;
+border-bottom: 2px solid #d29a35;
 text-align: center;
 }
 
-.top-message {
-width: 100%;
-padding: 12px 20px;
-background: #d5a533;
-color: #111111;
-font-size: 13px;
+.language-menu a {
+display: inline-block;
+margin: 4px 18px;
+color: #172033;
+font-size: 14px;
 font-weight: 700;
-letter-spacing: 1px;
-text-transform: uppercase;
+text-decoration: none;
 }
 
-.container {
-width: 92%;
-max-width: 1050px;
-margin: 0 auto;
-padding: 42px 20px 50px;
+.language-menu a:hover,
+.language-menu a.active {
+color: #b77d18;
+}
+
+.hero {
+padding: 38px 20px 55px;
+background: #ffffff;
+text-align: center;
 }
 
 .main-logo {
@@ -53,163 +65,552 @@ width: 24%;
 max-width: 310px;
 min-width: 200px;
 height: auto;
-margin: 0 auto 28px;
+margin: 0 auto 27px;
 background: #ffffff;
-border: 1px solid #dddddd;
+border: 1px solid #e1e4e8;
 border-radius: 14px;
-box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
 }
 
-h1 {
-margin: 8px 0;
-color: #111111;
+.hero h1 {
+margin: 0 0 7px;
+color: #111820;
 font-size: 42px;
 line-height: 1.15;
 }
 
-h2 {
-margin: 8px 0 14px;
-color: #b98516;
-font-size: 24px;
-font-weight: 600;
-}
-
-.welcome {
-max-width: 700px;
-margin: 0 auto 34px;
-color: #444444;
-font-size: 17px;
-line-height: 1.6;
-}
-
-.selection-title {
+.hero-subtitle {
 margin: 0 0 20px;
-color: #111111;
-font-size: 18px;
+color: #b77d18;
+font-size: 23px;
 font-weight: 700;
 }
 
-.language-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-max-width: 920px;
+.hero-text {
+max-width: 760px;
 margin: 0 auto;
+color: #667080;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.75;
 }
 
-.language-card {
-display: block;
-padding: 28px 18px;
-background: #ffffff;
-border: 1px solid #dddddd;
-border-top: 5px solid #d5a533;
-border-radius: 14px;
-color: #111111;
-text-decoration: none;
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-transition: transform 0.2s ease, box-shadow 0.2s ease;
+.content {
+width: 92%;
+max-width: 1080px;
+margin: 0 auto;
+padding: 65px 20px 60px;
 }
 
-.language-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+.section {
+margin-bottom: 78px;
 }
 
-.language-icon {
-display: block;
-margin-bottom: 13px;
-font-size: 38px;
+.section-label {
+display: flex;
+align-items: center;
+gap: 14px;
+margin-bottom: 21px;
+color: #c58a28;
+font-size: 13px;
+font-weight: 800;
+letter-spacing: 2.3px;
+text-transform: uppercase;
 }
 
-.language-card h3 {
-margin: 0 0 9px;
-color: #111111;
-font-size: 21px;
+.section-label::before {
+width: 74px;
+height: 3px;
+background: #c58a28;
+content: "";
 }
 
-.language-card p {
-margin: 0 0 16px;
-color: #555555;
-font-size: 14px;
-line-height: 1.5;
+.section-heading {
+max-width: 780px;
+margin: 0 0 25px;
+color: #064a78;
+font-size: 43px;
+font-weight: 750;
+line-height: 1.15;
+letter-spacing: -0.7px;
 }
 
-.open-button {
-display: inline-block;
-padding: 9px 20px;
-background: #d5a533;
-border-radius: 6px;
-color: #111111;
-font-size: 14px;
-font-weight: 700;
+.gold-text {
+color: #c58a28;
 }
 
-.contact {
+.section-text {
+max-width: 850px;
+margin: 0;
+color: #687282;
+font-size: 17px;
+font-weight: 400;
+line-height: 1.9;
+}
+
+.benefits {
+max-width: 880px;
+margin-top: 36px;
+}
+
+.benefit {
+display: flex;
+align-items: flex-start;
+gap: 17px;
+margin-bottom: 24px;
+}
+
+.check {
+display: flex;
+flex: 0 0 32px;
+align-items: center;
+justify-content: center;
+width: 32px;
+height: 32px;
+margin-top: 1px;
+background: #c58a28;
+border-radius: 50%;
+color: #ffffff;
+font-size: 17px;
+font-weight: 800;
+}
+
+.benefit p {
+margin: 2px 0 0;
+color: #273247;
+font-size: 16px;
+line-height: 1.65;
+}
+
+.coming-service {
+display: flex;
+align-items: center;
+gap: 20px;
+max-width: 880px;
 margin-top: 38px;
-color: #333333;
+padding: 24px 26px;
+background: #ffffff;
+border: 1px solid #dfe4e9;
+border-left: 6px solid #c58a28;
+border-radius: 10px;
+box-shadow: 0 8px 24px rgba(30, 50, 70, 0.06);
+}
+
+.coming-service-icon {
+display: flex;
+flex: 0 0 52px;
+align-items: center;
+justify-content: center;
+width: 52px;
+height: 52px;
+background: #064a78;
+border-radius: 9px;
+color: #d9a23d;
+font-size: 24px;
+}
+
+.coming-service-content {
+text-align: left;
+}
+
+.coming-service-label {
+display: block;
+margin-bottom: 5px;
+color: #c58a28;
+font-size: 11px;
+font-weight: 800;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+}
+
+.coming-service h3 {
+margin: 0 0 7px;
+color: #064a78;
+font-size: 22px;
+line-height: 1.25;
+}
+
+.coming-service p {
+margin: 0;
+color: #687282;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.7;
+}
+
+.model-list {
+display: grid;
+gap: 28px;
+margin-top: 36px;
+}
+
+.model-card {
+position: relative;
+display: grid;
+grid-template-columns: 96px 1fr;
+gap: 25px;
+padding: 36px 34px;
+background: #ffffff;
+border: 1px solid #dfe4e9;
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(30, 50, 70, 0.07);
+}
+
+.model-card.featured {
+border: 1px solid #c58a28;
+border-left: 8px solid #c58a28;
+}
+
+.model-number {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 72px;
+height: 72px;
+background: #064a78;
+border-radius: 10px;
+color: #ffffff;
+font-size: 23px;
+font-weight: 800;
+}
+
+.model-card.featured .model-number {
+background: #c58a28;
+}
+
+.model-content h3 {
+margin: 0 0 14px;
+color: #064a78;
+font-size: 24px;
+font-weight: 750;
+line-height: 1.3;
+}
+
+.model-content p {
+max-width: 780px;
+margin: 0 0 13px;
+color: #687282;
 font-size: 15px;
+font-weight: 400;
 line-height: 1.8;
 }
 
-.contact a {
-color: #111111;
+.model-note {
+margin-top: 18px;
+padding-top: 16px;
+border-top: 1px solid #ebedef;
+color: #a56e15;
+font-size: 13px;
 font-weight: 700;
-text-decoration: none;
+line-height: 1.6;
 }
 
-.contact a:hover {
-color: #b98516;
+.included-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 19px;
+margin-top: 35px;
+}
+
+.included-card {
+min-height: 185px;
+padding: 27px 24px;
+background: #ffffff;
+border: 1px solid #dfe4e9;
+border-radius: 10px;
+}
+
+.included-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 49px;
+height: 49px;
+margin-bottom: 19px;
+background: #064a78;
+border-radius: 8px;
+color: #d9a23d;
+font-size: 23px;
+}
+
+.included-card h3 {
+margin: 0 0 10px;
+color: #064a78;
+font-size: 18px;
+font-weight: 750;
+line-height: 1.35;
+}
+
+.included-card p {
+margin: 0;
+color: #697382;
+font-size: 14px;
+line-height: 1.7;
+}
+
+.industries {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 17px 35px;
+max-width: 900px;
+margin-top: 34px;
+}
+
+.industry {
+display: flex;
+align-items: flex-start;
+gap: 14px;
+color: #273247;
+font-size: 15px;
+line-height: 1.55;
+}
+
+.small-check {
+display: flex;
+flex: 0 0 27px;
+align-items: center;
+justify-content: center;
+width: 27px;
+height: 27px;
+background: #c58a28;
+border-radius: 50%;
+color: #ffffff;
+font-size: 14px;
+font-weight: 800;
+}
+
+.closing {
+padding: 44px 40px;
+background: #064a78;
+border-radius: 13px;
+color: #ffffff;
+}
+
+.closing-label {
+margin-bottom: 15px;
+color: #e0aa44;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.closing h2 {
+max-width: 750px;
+margin: 0 0 18px;
+color: #ffffff;
+font-size: 33px;
+line-height: 1.25;
+}
+
+.closing p {
+max-width: 840px;
+margin: 0;
+color: #d9e2ea;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.8;
+}
+
+.legal-note {
+max-width: 900px;
+margin: 24px 0 0;
+color: #818a96;
+font-size: 12px;
+line-height: 1.65;
+}
+
+.contact-section {
+margin-top: 65px;
+padding: 43px 35px;
+background: #ffffff;
+border: 1px solid #dfe4e9;
+border-radius: 12px;
+text-align: center;
+}
+
+.contact-section h2 {
+margin: 0 0 12px;
+color: #064a78;
+font-size: 28px;
+}
+
+.contact-section p {
+max-width: 680px;
+margin: 0 auto 24px;
+color: #687282;
+font-size: 15px;
+line-height: 1.7;
+}
+
+.contact-button {
+display: inline-block;
+margin: 7px;
+padding: 14px 23px;
+background: #064a78;
+border: 2px solid #064a78;
+border-radius: 7px;
+color: #ffffff;
+font-size: 15px;
+font-weight: 750;
+text-decoration: none;
+transition: 0.2s ease;
+}
+
+.contact-button.gold {
+background: #c58a28;
+border-color: #c58a28;
+}
+
+.contact-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
 }
 
 footer {
-margin-top: 32px;
-padding-top: 20px;
-border-top: 1px solid #e5e5e5;
-color: #777777;
+padding: 27px 20px;
+background: #064a78;
+color: #d8e1e8;
+font-size: 12px;
+text-align: center;
+}
+
+@media (max-width: 820px) {
+.included-grid {
+grid-template-columns: 1fr;
+}
+
+.model-card {
+grid-template-columns: 78px 1fr;
+}
+
+.industries {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 700px) {
+.language-menu a {
+margin: 4px 8px;
 font-size: 13px;
 }
 
-@media (max-width: 760px) {
-.container {
-padding: 30px 16px 40px;
+.hero {
+padding: 27px 16px 43px;
 }
 
 .main-logo {
-width: 65%;
-min-width: 220px;
-max-width: 350px;
+width: 55%;
+min-width: 190px;
+max-width: 300px;
 }
 
-h1 {
+.hero h1 {
 font-size: 30px;
 }
 
-h2 {
+.hero-subtitle {
 font-size: 20px;
 }
 
-.welcome {
+.hero-text {
+font-size: 15px;
+}
+
+.content {
+width: 100%;
+padding: 48px 25px;
+}
+
+.section {
+margin-bottom: 60px;
+}
+
+.section-label::before {
+width: 48px;
+}
+
+.section-heading {
+font-size: 34px;
+}
+
+.section-text {
 font-size: 16px;
+line-height: 1.8;
 }
 
-.language-grid {
-grid-template-columns: 1fr;
-max-width: 440px;
+.coming-service {
+align-items: flex-start;
+padding: 22px 20px;
+}
+
+.coming-service-icon {
+flex-basis: 44px;
+width: 44px;
+height: 44px;
+font-size: 20px;
+}
+
+.model-card {
+display: block;
+padding: 29px 25px;
+}
+
+.model-number {
+width: 60px;
+height: 60px;
+margin-bottom: 20px;
+}
+
+.model-content h3 {
+font-size: 21px;
+}
+
+.closing {
+padding: 34px 26px;
+}
+
+.closing h2 {
+font-size: 27px;
 }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
 .main-logo {
-width: 88%;
+width: 72%;
 min-width: 0;
 }
 
-h1 {
+.hero h1 {
 font-size: 27px;
 }
 
-.top-message {
-font-size: 11px;
+.content {
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.section-heading {
+font-size: 30px;
+}
+
+.benefit {
+gap: 13px;
+}
+
+.coming-service {
+display: block;
+}
+
+.coming-service-icon {
+margin-bottom: 15px;
+}
+
+.contact-button {
+display: block;
+width: 100%;
+max-width: 350px;
+margin: 10px auto;
 }
 }
 </style>
@@ -217,85 +618,458 @@ font-size: 11px;
 
 <body>
 
-<div class="top-message">
-Welcome to KiwiAus Business Australia
-</div>
+<nav class="language-menu">
+<a href="/en/">English</a>
+<a href="/ru/" class="active">Русский</a>
+<a href="/zh-hk/">香港中文</a>
+</nav>
 
-<main class="container">
+<header class="hero">
 
 <img
-src="IMG_3917.jpg"
-alt="KiwiAus Group Australia"
+src="../IMG_3917.jpg"
+alt="KiwiAus Business Australia"
 class="main-logo"
 >
 
 <h1>KiwiAus Business Australia</h1>
 
-<h2>Australian Business Solutions</h2>
+<div class="hero-subtitle">
+Профессиональные бизнес-решения в Австралии
+</div>
 
-<p class="welcome">
-Professional Australian business solutions for international clients,
-entrepreneurs and trusted business partners worldwide.
+<p class="hero-text">
+Помогаем международным клиентам, предпринимателям и профессиональным
+партнёрам открывать и приобретать австралийские компании
+с сопровождением на каждом этапе.
 </p>
 
-<p class="selection-title">
-Please select your preferred language
+</header>
+
+<main class="content">
+
+<section class="section">
+
+<div class="section-label">
+Кто мы
+</div>
+
+<h2 class="section-heading">
+Больше, чем
+<span class="gold-text">регистрация компании.</span>
+</h2>
+
+<p class="section-text">
+KiwiAus Business Australia предоставляет комплексные решения
+для клиентов, планирующих начать или расширить деятельность
+в Австралии. Мы помогаем выбрать подходящий вариант, оформить
+необходимые документы и сопровождаем процесс от первого обращения
+до начала работы.
 </p>
 
-<section class="language-grid">
+<div class="benefits">
 
-<a href="/en/" class="language-card">
-<span class="language-icon">🌏</span>
-
-<h3>English</h3>
+<div class="benefit">
+<span class="check">✓</span>
 
 <p>
-International business solutions and professional support in Australia.
+Практический опыт создания и сопровождения
+австралийских компаний.
+</p>
+</div>
+
+<div class="benefit">
+<span class="check">✓</span>
+
+<p>
+Понятный и последовательный процесс от первого обращения
+до завершения оформления.
+</p>
+</div>
+
+<div class="benefit">
+<span class="check">✓</span>
+
+<p>
+Профессионально оформленные документы
+для международных клиентов.
+</p>
+</div>
+
+<div class="benefit">
+<span class="check">✓</span>
+
+<p>
+Индивидуальное решение с учётом целей
+и направления будущего бизнеса.
+</p>
+</div>
+
+</div>
+
+<div class="coming-service">
+
+<div class="coming-service-icon">
+✦
+</div>
+
+<div class="coming-service-content">
+
+<span class="coming-service-label">
+Новое направление
+</span>
+
+<h3>
+Immigration
+</h3>
+
+<p>
+Дополнительное направление KiwiAus, связанное с развитием
+партнёрских решений в сфере Immigration, находится
+в процессе подготовки. Подробная информация будет опубликована позднее.
 </p>
 
-<span class="open-button">Enter Website</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+Варианты оформления
+</div>
+
+<h2 class="section-heading">
+Выберите подходящую
+<span class="gold-text">модель компании.</span>
+</h2>
+
+<p class="section-text">
+Мы предлагаем два основных варианта оформления. Подходящий способ
+определяется с учётом целей клиента, готовности документов
+и предполагаемой деятельности компании.
+</p>
+
+<div class="model-list">
+
+<article class="model-card">
+
+<div class="model-number">
+01
+</div>
+
+<div class="model-content">
+
+<h3>
+Регистрация непосредственно на клиента
+</h3>
+
+<p>
+Австралийская компания с самого начала регистрируется
+с участием клиента. После предоставления необходимых данных
+клиент назначается директором и становится владельцем акций.
+</p>
+
+<p>
+KiwiAus организует процесс регистрации, оформляет комплект
+документов и помогает пройти основные этапы создания компании.
+</p>
+
+<div class="model-note">
+Подходит клиентам, готовым сразу предоставить сведения
+и документы, необходимые для регистрации и проверки.
+</div>
+
+</div>
+
+</article>
+
+<article class="model-card featured">
+
+<div class="model-number">
+02
+</div>
+
+<div class="model-content">
+
+<h3>
+Предварительно подготовленная бизнес-структура
+</h3>
+
+<p>
+Компания первоначально учреждается и оформляется нашей
+австралийской командой. До передачи новому владельцу
+подготавливаются согласованные документы и необходимые
+элементы корпоративного оформления.
+</p>
+
+<p>
+После получения данных клиента, проведения применимых проверок
+и завершения согласованных процедур официально оформляются
+изменения директора и владельца акций.
+</p>
+
+<div class="model-note">
+Подходит клиентам, которым необходима заранее оформленная
+компания с подготовленным комплектом документов
+и организованной процедурой передачи.
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+Что мы предлагаем
+</div>
+
+<h2 class="section-heading">
+Комплексное решение
+<span class="gold-text">для начала работы в Австралии.</span>
+</h2>
+
+<p class="section-text">
+Состав услуг определяется индивидуально — с учётом выбранного
+варианта, деятельности компании и необходимых клиенту элементов.
+</p>
+
+<div class="included-grid">
+
+<article class="included-card">
+
+<div class="included-icon">
+🏢
+</div>
+
+<h3>
+Создание компании
+</h3>
+
+<p>
+Регистрация австралийской компании, оформление ACN
+и подготовка основных регистрационных документов.
+</p>
+
+</article>
+
+<article class="included-card">
+
+<div class="included-icon">
+📄
+</div>
+
+<h3>
+Корпоративные документы
+</h3>
+
+<p>
+Устав, сертификаты акций, реестры, решения
+и другие документы, предусмотренные выбранным решением.
+</p>
+
+</article>
+
+<article class="included-card">
+
+<div class="included-icon">
+✓
+</div>
+
+<h3>
+Регистрационные номера
+</h3>
+
+<p>
+Содействие в оформлении ABN и других применимых регистраций
+с учётом деятельности компании.
+</p>
+
+</article>
+
+<article class="included-card">
+
+<div class="included-icon">
+↔
+</div>
+
+<h3>
+Изменения и передача
+</h3>
+
+<p>
+Оформление изменений директора и владельца акций,
+а также документов, связанных с передачей компании.
+</p>
+
+</article>
+
+<article class="included-card">
+
+<div class="included-icon">
+✉
+</div>
+
+<h3>
+Адрес и корреспонденция
+</h3>
+
+<p>
+Зарегистрированный или деловой адрес и обработка
+поступающей корреспонденции, когда эти услуги
+включены в выбранное решение.
+</p>
+
+</article>
+
+<article class="included-card">
+
+<div class="included-icon">
+🌏
+</div>
+
+<h3>
+Дальнейшее сопровождение
+</h3>
+
+<p>
+Помощь после регистрации или передачи компании,
+включая последующие корпоративные изменения.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+Для кого
+</div>
+
+<h2 class="section-heading">
+Решения для международных клиентов
+<span class="gold-text">и профессиональных партнёров.</span>
+</h2>
+
+<p class="section-text">
+Мы работаем с предпринимателями, международными клиентами
+и профессиональными посредниками из разных отраслей,
+подбирая решение с учётом предполагаемой деятельности.
+</p>
+
+<div class="industries">
+
+<div class="industry">
+<span class="small-check">✓</span>
+Предприниматели и стартапы
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+IT и программное обеспечение
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+E-commerce и онлайн-бизнес
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+Консультационные услуги
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+Импорт и экспорт
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+FinTech и блокчейн-проекты
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+Международные компании
+</div>
+
+<div class="industry">
+<span class="small-check">✓</span>
+Юристы, бухгалтеры и корпоративные партнёры
+</div>
+
+</div>
+
+</section>
+
+<section class="closing">
+
+<div class="closing-label">
+Наш подход
+</div>
+
+<h2>
+Надёжная основа для работы в Австралии
+</h2>
+
+<p>
+Мы сопровождаем клиента не только на этапе регистрации.
+Наша задача — организовать понятный процесс оформления,
+обеспечить корректную документацию и предоставить практическую
+помощь после завершения регистрации или передачи компании.
+</p>
+
+</section>
+
+<p class="legal-note">
+Услуги, назначения и изменения оформляются после предоставления
+необходимых данных, прохождения применимых проверок
+и при соблюдении требований законодательства Австралии.
+</p>
+
+<section class="contact-section">
+
+<h2>
+Обсудим подходящий вариант
+</h2>
+
+<p>
+Свяжитесь с нами, расскажите о своих задачах
+и получите информацию о доступных решениях.
+</p>
+
+<a
+href="mailto:info@kiwiaus.com"
+class="contact-button"
+>
+✉ Написать по Email
 </a>
 
-<a href="/ru/" class="language-card">
-<span class="language-icon">🌐</span>
-
-<h3>Русский</h3>
-
-<p>
-Профессиональные бизнес-решения и поддержка в Австралии.
-</p>
-
-<span class="open-button">Открыть сайт</span>
-</a>
-
-<a href="/zh-hk/" class="language-card">
-<span class="language-icon">香港</span>
-
-<h3>香港中文</h3>
-
-<p>
-為香港及國際客戶提供專業的澳洲商業解決方案。
-</p>
-
-<span class="open-button">進入網站</span>
+<a
+href="https://wa.me/61413564200"
+class="contact-button gold"
+>
+WhatsApp: +61 413 564 200
 </a>
 
 </section>
 
-<div class="contact">
-Email:
-<a href="mailto:info@kiwiaus.com">info@kiwiaus.com</a>
-<br>
-
-Website:
-<a href="https://kiwiaus.com">www.kiwiaus.com</a>
-</div>
+</main>
 
 <footer>
-© 2026 KiwiAus Business Australia. All rights reserved.
+© 2026 KiwiAus Business Australia. Все права защищены.
 </footer>
-
-</main>
 
 </body>
 </html>
