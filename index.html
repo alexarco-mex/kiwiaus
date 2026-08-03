@@ -10,10 +10,10 @@ content="width=device-width, initial-scale=1.0"
 
 <meta
 name="description"
-content="KiwiAus Business Australia provides professional Australian business solutions for international clients and trusted business partners."
+content="KiwiAus Business Australia — professional Australian business solutions for international clients and business partners."
 >
 
-<title>KiwiAus Business Australia | Australian Business Solutions</title>
+<title>KiwiAus Business Australia</title>
 
 <style>
 * {
@@ -44,10 +44,10 @@ text-transform: uppercase;
 width: 92%;
 max-width: 1050px;
 margin: 0 auto;
-padding: 35px 20px 45px;
+padding: 42px 20px 50px;
 }
 
-.main-image {
+.main-logo {
 display: block;
 width: 30%;
 max-width: 390px;
@@ -61,92 +61,120 @@ box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
 }
 
 h1 {
-margin: 8px 0 6px;
+margin: 8px 0;
 color: #111111;
 font-size: 42px;
 line-height: 1.15;
 }
 
 h2 {
-margin: 8px 0 22px;
+margin: 8px 0 14px;
 color: #b98516;
 font-size: 24px;
 font-weight: 600;
 }
 
-.intro {
-max-width: 780px;
-margin: 0 auto 28px;
-color: #222222;
+.welcome {
+max-width: 700px;
+margin: 0 auto 34px;
+color: #444444;
+font-size: 17px;
+line-height: 1.6;
+}
+
+.selection-title {
+margin: 0 0 20px;
+color: #111111;
 font-size: 18px;
-line-height: 1.65;
-}
-
-.services {
-max-width: 900px;
-margin: 30px auto;
-padding: 22px 18px;
-border-top: 1px solid #d5a533;
-border-bottom: 1px solid #d5a533;
-color: #111111;
-font-size: 16px;
-line-height: 1.9;
-}
-
-.services-main {
-color: #111111;
 font-weight: 700;
 }
 
-.services-secondary {
-color: #b98516;
-font-weight: 700;
+.language-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+max-width: 920px;
+margin: 0 auto;
 }
 
-.trust {
-margin: 28px 0 22px;
+.language-card {
+display: block;
+padding: 28px 18px;
+background: #ffffff;
+border: 1px solid #dddddd;
+border-top: 5px solid #d5a533;
+border-radius: 14px;
 color: #111111;
-font-size: 15px;
+text-decoration: none;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.language-icon {
+display: block;
+margin-bottom: 13px;
+font-size: 38px;
+}
+
+.language-card h3 {
+margin: 0 0 9px;
+color: #111111;
+font-size: 21px;
+}
+
+.language-card p {
+margin: 0 0 16px;
+color: #555555;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.open-button {
+display: inline-block;
+padding: 9px 20px;
+background: #d5a533;
+border-radius: 6px;
+color: #111111;
+font-size: 14px;
 font-weight: 700;
-letter-spacing: 1.5px;
 }
 
 .contact {
-margin-top: 14px;
+margin-top: 38px;
+color: #333333;
+font-size: 15px;
+line-height: 1.8;
 }
 
 .contact a {
-display: inline-block;
-margin: 8px;
-padding: 13px 19px;
-border: 1px solid #d5a533;
-border-radius: 8px;
 color: #111111;
-background: #ffffff;
+font-weight: 700;
 text-decoration: none;
-font-size: 16px;
-font-weight: 600;
 }
 
 .contact a:hover {
-background: #d5a533;
-color: #111111;
+color: #b98516;
 }
 
 footer {
-margin-top: 36px;
-padding-top: 22px;
+margin-top: 32px;
+padding-top: 20px;
 border-top: 1px solid #e5e5e5;
-color: #555555;
+color: #777777;
 font-size: 13px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
 .container {
-padding: 26px 16px 38px;
+padding: 30px 16px 40px;
 }
 
-.main-image {
+.main-logo {
 width: 65%;
 min-width: 220px;
 max-width: 350px;
@@ -160,24 +188,18 @@ h2 {
 font-size: 20px;
 }
 
-.intro {
+.welcome {
 font-size: 16px;
 }
 
-.services {
-font-size: 14px;
-}
-
-.contact a {
-display: block;
-width: 100%;
-max-width: 340px;
-margin: 10px auto;
+.language-grid {
+grid-template-columns: 1fr;
+max-width: 440px;
 }
 }
 
 @media (max-width: 420px) {
-.main-image {
+.main-logo {
 width: 88%;
 min-width: 0;
 }
@@ -196,7 +218,7 @@ font-size: 11px;
 <body>
 
 <div class="top-message">
-Our new website is currently under development
+Welcome to KiwiAus Business Australia
 </div>
 
 <main class="container">
@@ -204,45 +226,69 @@ Our new website is currently under development
 <img
 src="IMG_3917.jpg"
 alt="KiwiAus Group Australia"
-class="main-image"
+class="main-logo"
 >
 
 <h1>KiwiAus Business Australia</h1>
 
 <h2>Australian Business Solutions</h2>
 
-<p class="intro">
-Connecting international clients and trusted business partners
-with professional Australian corporate solutions, practical support
-and long-term business opportunities.
+<p class="welcome">
+Professional Australian business solutions for international clients,
+entrepreneurs and trusted business partners worldwide.
 </p>
 
-<div class="services">
-
-<div class="services-main">
-Company Formation • Corporate Services • Business Support • International Partnerships
-</div>
-
-<div class="services-secondary">
-ABN • ACN • ASIC • AUSTRAC • Compliance
-</div>
-
-</div>
-
-<p class="trust">
-TRUSTED • PROFESSIONAL • AUSTRALIA BASED
+<p class="selection-title">
+Please select your preferred language
 </p>
+
+<section class="language-grid">
+
+<a href="/en/" class="language-card">
+<span class="language-icon">🌏</span>
+
+<h3>English</h3>
+
+<p>
+International business solutions and professional support in Australia.
+</p>
+
+<span class="open-button">Enter Website</span>
+</a>
+
+<a href="/ru/" class="language-card">
+<span class="language-icon">🌐</span>
+
+<h3>Русский</h3>
+
+<p>
+Профессиональные бизнес-решения и поддержка в Австралии.
+</p>
+
+<span class="open-button">Открыть сайт</span>
+</a>
+
+<a href="/zh-hk/" class="language-card">
+<span class="language-icon">香港</span>
+
+<h3>香港中文</h3>
+
+<p>
+為香港及國際客戶提供專業的澳洲商業解決方案。
+</p>
+
+<span class="open-button">進入網站</span>
+</a>
+
+</section>
 
 <div class="contact">
+Email:
+<a href="mailto:info@kiwiaus.com">info@kiwiaus.com</a>
+<br>
 
-<a href="mailto:info@kiwiaus.com">
-✉ Email: info@kiwiaus.com
-</a>
-
-<a href="https://kiwiaus.com">
-🌐 Website: www.kiwiaus.com
-</a>
-
+Website:
+<a href="https://kiwiaus.com">www.kiwiaus.com</a>
 </div>
 
 <footer>
