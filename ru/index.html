@@ -10,7 +10,7 @@ content="width=device-width, initial-scale=1.0"
 
 <meta
 name="description"
-content="KiwiAus Business Australia предоставляет профессиональные решения по созданию и подготовке австралийских компаний для международных клиентов и деловых партнёров."
+content="KiwiAus Business Australia предоставляет профессиональные решения по регистрации и подготовке австралийских компаний для международных клиентов и деловых партнёров."
 >
 
 <title>KiwiAus Business Australia | Бизнес-решения в Австралии</title>
@@ -61,9 +61,9 @@ text-align: center;
 
 .main-logo {
 display: block;
-width: 30%;
-max-width: 390px;
-min-width: 240px;
+width: 24%;
+max-width: 310px;
+min-width: 200px;
 height: auto;
 margin: 0 auto 27px;
 background: #ffffff;
@@ -93,6 +93,77 @@ color: #667080;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.75;
+}
+
+.hero-audience {
+max-width: 940px;
+margin: 45px auto 0;
+padding: 34px 32px;
+background: #f6f8fa;
+border: 1px solid #dfe4e9;
+border-top: 5px solid #c58a28;
+border-radius: 12px;
+text-align: left;
+box-shadow: 0 9px 26px rgba(30, 50, 70, 0.06);
+}
+
+.hero-audience-label {
+margin-bottom: 12px;
+color: #c58a28;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.hero-audience h2 {
+max-width: 790px;
+margin: 0 0 16px;
+color: #064a78;
+font-size: 30px;
+line-height: 1.25;
+}
+
+.hero-audience h2 span {
+color: #c58a28;
+}
+
+.hero-audience > p {
+max-width: 820px;
+margin: 0 0 25px;
+color: #687282;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.75;
+}
+
+.hero-audience-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 14px 28px;
+}
+
+.hero-audience-item {
+display: flex;
+align-items: flex-start;
+gap: 11px;
+color: #273247;
+font-size: 14px;
+line-height: 1.5;
+}
+
+.hero-audience-item span {
+display: flex;
+flex: 0 0 25px;
+align-items: center;
+justify-content: center;
+width: 25px;
+height: 25px;
+background: #c58a28;
+border-radius: 50%;
+color: #ffffff;
+font-size: 13px;
+font-weight: 800;
 }
 
 .content {
@@ -182,6 +253,62 @@ font-size: 16px;
 line-height: 1.65;
 }
 
+.coming-service {
+display: flex;
+align-items: center;
+gap: 20px;
+max-width: 880px;
+margin-top: 38px;
+padding: 24px 26px;
+background: #ffffff;
+border: 1px solid #dfe4e9;
+border-left: 6px solid #c58a28;
+border-radius: 10px;
+box-shadow: 0 8px 24px rgba(30, 50, 70, 0.06);
+}
+
+.coming-service-icon {
+display: flex;
+flex: 0 0 52px;
+align-items: center;
+justify-content: center;
+width: 52px;
+height: 52px;
+background: #064a78;
+border-radius: 9px;
+color: #d9a23d;
+font-size: 24px;
+}
+
+.coming-service-content {
+text-align: left;
+}
+
+.coming-service-label {
+display: block;
+margin-bottom: 5px;
+color: #c58a28;
+font-size: 11px;
+font-weight: 800;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+}
+
+.coming-service h3 {
+margin: 0 0 7px;
+color: #064a78;
+font-size: 22px;
+line-height: 1.25;
+}
+
+.coming-service p {
+margin: 0;
+color: #687282;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.7;
+}
+
 .model-list {
 display: grid;
 gap: 28px;
@@ -220,7 +347,6 @@ font-weight: 800;
 
 .model-card.featured .model-number {
 background: #c58a28;
-color: #ffffff;
 }
 
 .model-content h3 {
@@ -291,37 +417,6 @@ margin: 0;
 color: #697382;
 font-size: 14px;
 line-height: 1.7;
-}
-
-.industries {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 17px 35px;
-max-width: 900px;
-margin-top: 34px;
-}
-
-.industry {
-display: flex;
-align-items: flex-start;
-gap: 14px;
-color: #273247;
-font-size: 15px;
-line-height: 1.55;
-}
-
-.small-check {
-display: flex;
-flex: 0 0 27px;
-align-items: center;
-justify-content: center;
-width: 27px;
-height: 27px;
-background: #c58a28;
-border-radius: 50%;
-color: #ffffff;
-font-size: 14px;
-font-weight: 800;
 }
 
 .closing {
@@ -428,10 +523,6 @@ grid-template-columns: 1fr;
 .model-card {
 grid-template-columns: 78px 1fr;
 }
-
-.industries {
-grid-template-columns: 1fr;
-}
 }
 
 @media (max-width: 700px) {
@@ -445,9 +536,9 @@ padding: 27px 16px 43px;
 }
 
 .main-logo {
-width: 65%;
-min-width: 220px;
-max-width: 350px;
+width: 55%;
+min-width: 190px;
+max-width: 300px;
 }
 
 .hero h1 {
@@ -460,6 +551,20 @@ font-size: 20px;
 
 .hero-text {
 font-size: 15px;
+}
+
+.hero-audience {
+margin-top: 35px;
+padding: 27px 22px;
+}
+
+.hero-audience h2 {
+font-size: 25px;
+}
+
+.hero-audience-grid {
+grid-template-columns: 1fr;
+gap: 15px;
 }
 
 .content {
@@ -482,6 +587,18 @@ font-size: 34px;
 .section-text {
 font-size: 16px;
 line-height: 1.8;
+}
+
+.coming-service {
+align-items: flex-start;
+padding: 22px 20px;
+}
+
+.coming-service-icon {
+flex-basis: 44px;
+width: 44px;
+height: 44px;
+font-size: 20px;
 }
 
 .model-card {
@@ -510,7 +627,7 @@ font-size: 27px;
 
 @media (max-width: 440px) {
 .main-logo {
-width: 88%;
+width: 72%;
 min-width: 0;
 }
 
@@ -529,6 +646,14 @@ font-size: 30px;
 
 .benefit {
 gap: 13px;
+}
+
+.coming-service {
+display: block;
+}
+
+.coming-service-icon {
+margin-bottom: 15px;
 }
 
 .contact-button {
@@ -553,7 +678,7 @@ margin: 10px auto;
 
 <img
 src="../IMG_3917.jpg"
-alt="KiwiAus Group Australia"
+alt="KiwiAus Business Australia"
 class="main-logo"
 >
 
@@ -565,9 +690,72 @@ class="main-logo"
 
 <p class="hero-text">
 Помогаем международным клиентам, предпринимателям и профессиональным
-партнёрам создавать и подготавливать австралийские компании
-с понятной структурой и практической поддержкой на каждом этапе.
+партнёрам открывать и приобретать австралийские компании
+с сопровождением на каждом этапе.
 </p>
+
+<div class="hero-audience">
+
+<div class="hero-audience-label">
+Для кого подходят наши решения
+</div>
+
+<h2>
+Решения для международных клиентов
+<span>и профессиональных партнёров.</span>
+</h2>
+
+<p>
+Мы работаем с предпринимателями, международными клиентами
+и профессиональными посредниками из разных отраслей,
+подбирая решение с учётом предполагаемой деятельности.
+</p>
+
+<div class="hero-audience-grid">
+
+<div class="hero-audience-item">
+<span>✓</span>
+Предприниматели и стартапы
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+IT и программное обеспечение
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+E-commerce и онлайн-бизнес
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+Консультационные услуги
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+Импорт и экспорт
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+FinTech и блокчейн-проекты
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+Международные компании
+</div>
+
+<div class="hero-audience-item">
+<span>✓</span>
+Юристы, бухгалтеры и корпоративные партнёры
+</div>
+
+</div>
+
+</div>
 
 </header>
 
@@ -580,15 +768,16 @@ class="main-logo"
 </div>
 
 <h2 class="section-heading">
-Больше, чем обычная
+Больше, чем
 <span class="gold-text">регистрация компании.</span>
 </h2>
 
 <p class="section-text">
-KiwiAus Business Australia предоставляет комплексные корпоративные
-решения для клиентов, планирующих начать или расширить деятельность
-в Австралии. Мы помогаем выбрать подходящую модель, подготовить
-корпоративные документы и организовать дальнейшее сопровождение.
+KiwiAus Business Australia предоставляет комплексные решения
+для клиентов, планирующих начать или расширить деятельность
+в Австралии. Мы помогаем выбрать подходящий вариант, оформить
+необходимые документы и сопровождаем процесс от первого обращения
+до начала работы.
 </p>
 
 <div class="benefits">
@@ -597,8 +786,8 @@ KiwiAus Business Australia предоставляет комплексные к�
 <span class="check">✓</span>
 
 <p>
-Практический опыт работы с австралийскими компаниями
-и корпоративными структурами.
+Практический опыт создания и сопровождения
+австралийских компаний.
 </p>
 </div>
 
@@ -606,8 +795,8 @@ KiwiAus Business Australia предоставляет комплексные к�
 <span class="check">✓</span>
 
 <p>
-Понятный процесс — от первоначального обсуждения
-до подготовки и передачи компании.
+Понятный и последовательный процесс от первого обращения
+до завершения оформления.
 </p>
 </div>
 
@@ -615,7 +804,8 @@ KiwiAus Business Australia предоставляет комплексные к�
 <span class="check">✓</span>
 
 <p>
-Профессиональная документация и поддержка международных клиентов.
+Профессионально оформленные документы
+для международных клиентов.
 </p>
 </div>
 
@@ -623,8 +813,35 @@ KiwiAus Business Australia предоставляет комплексные к�
 <span class="check">✓</span>
 
 <p>
-Индивидуальная модель в зависимости от целей будущего бизнеса.
+Индивидуальное решение с учётом целей
+и направления будущего бизнеса.
 </p>
+</div>
+
+</div>
+
+<div class="coming-service">
+
+<div class="coming-service-icon">
+✦
+</div>
+
+<div class="coming-service-content">
+
+<span class="coming-service-label">
+Новое направление
+</span>
+
+<h3>
+Immigration
+</h3>
+
+<p>
+Дополнительное направление KiwiAus, связанное с развитием
+партнёрских решений в сфере Immigration, находится
+в процессе подготовки. Подробная информация будет опубликована позднее.
+</p>
+
 </div>
 
 </div>
@@ -634,7 +851,7 @@ KiwiAus Business Australia предоставляет комплексные к�
 <section class="section">
 
 <div class="section-label">
-Варианты работы
+Варианты оформления
 </div>
 
 <h2 class="section-heading">
@@ -643,9 +860,9 @@ KiwiAus Business Australia предоставляет комплексные к�
 </h2>
 
 <p class="section-text">
-Мы предлагаем два основных варианта. Структура и порядок работы
-определяются с учётом целей клиента, необходимых документов
-и требований к будущей деятельности.
+Мы предлагаем два основных варианта оформления. Подходящий способ
+определяется с учётом целей клиента, готовности документов
+и предполагаемой деятельности компании.
 </p>
 
 <div class="model-list">
@@ -659,24 +876,23 @@ KiwiAus Business Australia предоставляет комплексные к�
 <div class="model-content">
 
 <h3>
-Компания непосредственно на клиента
+Регистрация непосредственно на клиента
 </h3>
 
 <p>
-Австралийская компания создаётся с самого начала на имя клиента.
-После предоставления необходимых данных клиент назначается
-директором и становится владельцем акций.
+Австралийская компания с самого начала регистрируется
+с участием клиента. После предоставления необходимых данных
+клиент назначается директором и становится владельцем акций.
 </p>
 
 <p>
-KiwiAus помогает организовать регистрацию, подготовить
-корпоративные документы и обеспечить практическую поддержку
-при создании структуры.
+KiwiAus организует процесс регистрации, оформляет комплект
+документов и помогает пройти основные этапы создания компании.
 </p>
 
 <div class="model-note">
-Подходит клиентам, готовым сразу предоставить полные данные
-для регистрации и необходимых проверок.
+Подходит клиентам, готовым сразу предоставить сведения
+и документы, необходимые для регистрации и проверки.
 </div>
 
 </div>
@@ -696,20 +912,22 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Компания первоначально создаётся и подготавливается нашей
-австралийской командой как полноценная корпоративная структура.
+Компания первоначально учреждается и оформляется нашей
+австралийской командой. До передачи новому владельцу
+подготавливаются согласованные документы и необходимые
+элементы корпоративного оформления.
 </p>
 
 <p>
-После выполнения согласованных процедур, получения необходимых
-данных и проверки клиента директорство и права владения
-официально передаются новому владельцу.
+После получения данных клиента, проведения применимых проверок
+и завершения согласованных процедур официально оформляются
+изменения директора и владельца акций.
 </p>
 
 <div class="model-note">
-Подходит, когда требуется заранее подготовить компанию,
-документы и отдельные корпоративные элементы
-перед окончательной передачей клиенту.
+Подходит клиентам, которым необходима заранее оформленная
+компания с подготовленным комплектом документов
+и организованной процедурой передачи.
 </div>
 
 </div>
@@ -728,12 +946,12 @@ KiwiAus помогает организовать регистрацию, под
 
 <h2 class="section-heading">
 Комплексное решение
-<span class="gold-text">для работы в Австралии.</span>
+<span class="gold-text">для начала работы в Австралии.</span>
 </h2>
 
 <p class="section-text">
-Итоговый состав услуг подбирается индивидуально и зависит
-от выбранной модели, требований клиента и задач будущего бизнеса.
+Состав услуг определяется индивидуально — с учётом выбранного
+варианта, деятельности компании и необходимых клиенту элементов.
 </p>
 
 <div class="included-grid">
@@ -749,7 +967,7 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Регистрация австралийской компании, ACN, корпоративная структура
+Регистрация австралийской компании, оформление ACN
 и подготовка основных регистрационных документов.
 </p>
 
@@ -766,8 +984,8 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Устав компании, сертификаты акций, реестры,
-решения и документация, необходимая для работы структуры.
+Устав, сертификаты акций, реестры, решения
+и другие документы, предусмотренные выбранным решением.
 </p>
 
 </article>
@@ -783,8 +1001,8 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Содействие в оформлении ABN и других необходимых регистраций
-в зависимости от структуры и деятельности компании.
+Содействие в оформлении ABN и других применимых регистраций
+с учётом деятельности компании.
 </p>
 
 </article>
@@ -800,8 +1018,8 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Подготовка документов для изменения директора,
-владельца акций и официальной передачи корпоративной структуры.
+Оформление изменений директора и владельца акций,
+а также документов, связанных с передачей компании.
 </p>
 
 </article>
@@ -817,8 +1035,9 @@ KiwiAus помогает организовать регистрацию, под
 </h3>
 
 <p>
-Зарегистрированный или деловой адрес и обработка корреспонденции,
-когда это предусмотрено выбранным решением.
+Зарегистрированный или деловой адрес и обработка
+поступающей корреспонденции, когда эти услуги
+включены в выбранное решение.
 </p>
 
 </article>
@@ -830,77 +1049,15 @@ KiwiAus помогает организовать регистрацию, под
 </div>
 
 <h3>
-Дальнейшая поддержка
+Дальнейшее сопровождение
 </h3>
 
 <p>
-Практическое сопровождение после создания или передачи компании
-и помощь при дальнейших корпоративных изменениях.
+Помощь после регистрации или передачи компании,
+включая последующие корпоративные изменения.
 </p>
 
 </article>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="section-label">
-Для кого
-</div>
-
-<h2 class="section-heading">
-Решения для международного
-<span class="gold-text">бизнеса и партнёров.</span>
-</h2>
-
-<p class="section-text">
-Мы работаем с клиентами из разных отраслей и подбираем структуру
-в соответствии с предполагаемой деятельностью.
-</p>
-
-<div class="industries">
-
-<div class="industry">
-<span class="small-check">✓</span>
-Предприниматели и новые проекты
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-IT и программное обеспечение
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-E-commerce и онлайн-бизнес
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-Консультационные услуги
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-Импорт и экспорт
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-FinTech и blockchain-проекты
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-Международные компании
-</div>
-
-<div class="industry">
-<span class="small-check">✓</span>
-Юристы, бухгалтеры и корпоративные партнёры
-</div>
 
 </div>
 
@@ -913,33 +1070,33 @@ FinTech и blockchain-проекты
 </div>
 
 <h2>
-Профессионально подготовленная основа для дальнейшей работы
+Надёжная основа для работы в Австралии
 </h2>
 
 <p>
-Наша задача — не просто зарегистрировать компанию, а помочь создать
-понятную и практичную корпоративную структуру. Мы уделяем внимание
-документации, последовательности процесса и дальнейшей поддержке
-после создания или передачи компании.
+Мы сопровождаем клиента не только на этапе регистрации.
+Наша задача — организовать понятный процесс оформления,
+обеспечить корректную документацию и предоставить практическую
+помощь после завершения регистрации или передачи компании.
 </p>
 
 </section>
 
 <p class="legal-note">
-Все услуги, назначения и передачи осуществляются при условии
-предоставления необходимых данных, прохождения применимых проверок
-и соблюдения требований австралийского законодательства.
+Услуги, назначения и изменения оформляются после предоставления
+необходимых данных, прохождения применимых проверок
+и при соблюдении требований законодательства Австралии.
 </p>
 
 <section class="contact-section">
 
 <h2>
-Обсудим подходящую структуру
+Обсудим подходящий вариант
 </h2>
 
 <p>
-Свяжитесь с нами, чтобы рассказать о своих задачах
-и получить информацию о доступных вариантах.
+Свяжитесь с нами, расскажите о своих задачах
+и получите информацию о доступных решениях.
 </p>
 
 <a
