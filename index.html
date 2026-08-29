@@ -16,68 +16,65 @@ content="KiwiAus Business Australia — professional Australian business solutio
 <title>KiwiAus Business Australia</title>
 
 <style>
-/* ===== KIWIAUS HOME PAGE FIX ===== */
-
-html,
-body {
-width: 100%;
-margin: 0;
-padding: 0;
-overflow-x: hidden;
-}
-
-.page {
-width: 100% !important;
-max-width: 100% !important;
-display: block !important;
-margin: 0 auto !important;
-padding: 40px 20px !important;
-box-sizing: border-box;
-}
-
-.main-box {
-width: 100% !important;
-max-width: 1100px !important;
-display: block !important;
-margin: 0 auto !important;
-padding: 0 !important;
-}
-
-.hero-image {
-width: 100% !important;
-max-width: 1100px !important;
-height: auto !important;
-display: block !important;
-margin: 0 auto 35px auto !important;
-border-radius: 18px;
-}
+/* ===== KIWIAUS LANGUAGE SECTION DESIGN ===== */
 
 .welcome {
 display: block !important;
 width: 100% !important;
 text-align: center !important;
-margin: 10px auto 25px auto !important;
-font-size: 18px !important;
-color: #6b7280 !important;
+font-size: 26px !important;
+font-weight: 700 !important;
+color: #173b63 !important;
+margin: 20px auto 10px auto !important;
+line-height: 1.3 !important;
 }
 
 .language-grid {
 width: 100% !important;
-max-width: 700px !important;
+max-width: 760px !important;
 display: grid !important;
-grid-template-columns: 1fr 1fr !important;
+grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 gap: 20px !important;
-margin: 0 auto !important;
+margin: 25px auto 0 auto !important;
 padding: 0 !important;
 }
 
 .language-card {
 width: 100% !important;
-min-height: 90px !important;
+min-height: 95px !important;
 display: flex !important;
 align-items: center !important;
 justify-content: center !important;
 box-sizing: border-box !important;
+
+background: #ffffff !important;
+border: 1px solid #e2e6ea !important;
+border-top: 3px solid #c58a28 !important;
+border-radius: 16px !important;
+
+box-shadow: 0 8px 24px rgba(20, 50, 80, 0.08) !important;
+
+text-decoration: none !important;
+transition: all 0.2s ease !important;
+}
+
+.language-card span {
+display: block !important;
+font-size: 23px !important;
+font-weight: 500 !important;
+color: #17476f !important;
+text-align: center !important;
+line-height: 1.2 !important;
+}
+
+.language-card:hover {
+transform: translateY(-3px) !important;
+box-shadow: 0 12px 28px rgba(20, 50, 80, 0.14) !important;
+border-top-color: #d8a544 !important;
+}
+
+.language-card:active {
+transform: translateY(0) !important;
 }
 
 footer {
@@ -88,60 +85,35 @@ margin-top: 35px !important;
 clear: both !important;
 }
 
+/* ===== MOBILE ===== */
+
 @media (max-width: 700px) {
 
-.page {
-padding: 28px 16px !important;
-}
-
-.hero-image {
-width: 100% !important;
-max-width: 100% !important;
-margin-bottom: 28px !important;
-border-radius: 14px !important;
-}
-
 .welcome {
-font-size: 17px !important;
-margin-bottom: 20px !important;
+font-size: 22px !important;
+margin-top: 10px !important;
+margin-bottom: 18px !important;
 }
 
 .language-grid {
 grid-template-columns: 1fr !important;
 width: 100% !important;
 max-width: 100% !important;
-gap: 16px !important;
+gap: 15px !important;
+margin-top: 20px !important;
 }
 
-body,
-.page,
-.main-box {
-display: block !important;
+.language-card {
+min-height: 82px !important;
+border-radius: 14px !important;
 }
 
-.language-grid {
-display: grid !important;
-grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-width: 100% !important;
-max-width: 700px !important;
-margin: 0 auto !important;
-}
-
-.welcome,
-.language-grid,
-footer {
-position: static !important;
-float: none !important;
-clear: both !important;
+.language-card span {
+font-size: 22px !important;
 }
 
 footer {
 margin-top: 30px !important;
-}
-  
-.language-card {
-min-height: 82px !important;
-font-size: 22px !important;
 }
 }
 </style>
