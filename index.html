@@ -17,7 +17,6 @@ content="KiwiAus Business Australia & New Zealand — professional Australian an
 
 <title>KiwiAus Business Australia & New Zealand</title>
 
-
 <style>
 
 /* ==================================================
@@ -25,9 +24,6 @@ KIWIAUS
 AUSTRALIA & NEW ZEALAND
 MAIN LANGUAGE PAGE
 ================================================== */
-
-
-/* ===== GENERAL ===== */
 
 * {
 box-sizing: border-box;
@@ -47,32 +43,23 @@ color: #172033;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* ===== GOLD TOP LINE ===== */
-
 .top-line {
 width: 100%;
 height: 4px;
 background: #c58a28;
 }
 
-
-/* ===== PAGE ===== */
-
 .page {
 width: 100%;
-max-width: 1200px;
+max-width: 1180px;
 margin: 0 auto;
-padding: 42px 24px 50px 24px;
+padding: 36px 24px 42px 24px;
 display: block;
 }
 
-
-/* ===== MAIN HERO IMAGE ===== */
-
 .main-box {
 width: 100%;
-max-width: 1100px;
+max-width: 1040px;
 margin: 0 auto;
 padding: 0;
 display: block;
@@ -80,153 +67,82 @@ display: block;
 
 .hero-image {
 width: 100%;
-max-width: 1100px;
+max-width: 1040px;
 height: auto;
 display: block;
 margin: 0 auto;
-border-radius: 20px;
-
-box-shadow:
-0 12px 35px
-rgba(20, 50, 80, 0.10);
+border-radius: 18px;
+box-shadow: 0 10px 28px rgba(20, 50, 80, 0.08);
 }
-
-
-/* ===== LANGUAGE TITLE ===== */
 
 .welcome {
 display: block;
 width: 100%;
-
 text-align: center;
-
-font-size: 26px;
+font-size: 24px;
 font-weight: 700;
-
 color: #173b63;
-
-margin:
-34px auto
-8px auto;
-
+margin: 30px auto 8px auto;
 line-height: 1.3;
 }
 
-
-/* ===== LANGUAGE GRID ===== */
-
 .language-grid {
 width: 100%;
-max-width: 760px;
-
+max-width: 620px;
 display: grid;
-
-grid-template-columns:
-repeat(2, minmax(0, 1fr));
-
-gap: 20px;
-
-margin:
-26px auto
-0 auto;
-
+grid-template-columns: repeat(2, 1fr);
+gap: 18px;
+margin: 24px auto 0 auto;
 padding: 0;
 }
 
-
-/* ===== LANGUAGE BUTTONS ===== */
-
 .language-card {
 width: 100%;
-
-min-height: 95px;
-
+min-height: 78px;
 display: flex;
-
 align-items: center;
 justify-content: center;
-
 background: #ffffff;
-
-border:
-1px solid
-#e2e6ea;
-
-border-top:
-3px solid
-#c58a28;
-
-border-radius: 16px;
-
-box-shadow:
-0 8px 24px
-rgba(20, 50, 80, 0.08);
-
+border: 1px solid #e2e6ea;
+border-top: 3px solid #c58a28;
+border-radius: 14px;
+box-shadow: 0 6px 18px rgba(20, 50, 80, 0.07);
 text-decoration: none;
-
 transition:
 transform 0.2s ease,
 box-shadow 0.2s ease,
 border-color 0.2s ease;
 }
 
-
-/* ===== LANGUAGE TEXT ===== */
-
 .language-card span {
 display: block;
-
-font-size: 23px;
+font-size: 21px;
 font-weight: 500;
-
 color: #17476f;
-
 text-align: center;
-
 line-height: 1.2;
 }
 
-
-/* ===== HOVER EFFECT ===== */
-
 .language-card:hover {
-transform:
-translateY(-3px);
-
-box-shadow:
-0 12px 28px
-rgba(20, 50, 80, 0.14);
-
-border-top-color:
-#d8a544;
+transform: translateY(-2px);
+box-shadow: 0 10px 24px rgba(20, 50, 80, 0.12);
+border-top-color: #d8a544;
 }
-
-
-/* ===== CLICK EFFECT ===== */
 
 .language-card:active {
-transform:
-translateY(0);
+transform: translateY(0);
 }
-
-
-/* ===== EMAIL ===== */
 
 .contact {
 width: 100%;
-
 text-align: center;
-
-margin-top: 34px;
-
-font-size: 17px;
+margin-top: 30px;
+font-size: 16px;
 }
 
 .contact a {
 color: #17476f;
-
 text-decoration: none;
-
 font-weight: 500;
 }
 
@@ -234,29 +150,17 @@ font-weight: 500;
 color: #c58a28;
 }
 
-
-/* ===== FOOTER ===== */
-
 footer {
 width: 100%;
-
 display: block;
-
 text-align: center;
-
-margin-top: 20px;
-
+margin-top: 16px;
 color: #8a929c;
-
 font-size: 14px;
-
 clear: both;
 }
 
-
-/* ==================================================
-MOBILE
-================================================== */
+/* ===== MOBILE ===== */
 
 @media (max-width: 700px) {
 
@@ -266,10 +170,7 @@ height: 3px;
 
 .page {
 width: 100%;
-
-padding:
-28px 16px
-40px 16px;
+padding: 24px 14px 36px 14px;
 }
 
 .main-box {
@@ -280,100 +181,77 @@ max-width: 100%;
 .hero-image {
 width: 100%;
 max-width: 100%;
-
 height: auto;
-
 margin: 0 auto;
-
-border-radius: 14px;
-
-box-shadow:
-0 8px 24px
-rgba(20, 50, 80, 0.09);
+border-radius: 13px;
+box-shadow: 0 8px 22px rgba(20, 50, 80, 0.08);
 }
 
 .welcome {
-font-size: 22px;
-
-margin-top: 27px;
-
-margin-bottom: 16px;
+font-size: 21px;
+margin-top: 24px;
+margin-bottom: 14px;
 }
 
 .language-grid {
 width: 100%;
-
 max-width: 100%;
-
 grid-template-columns: 1fr;
-
-gap: 15px;
-
-margin-top: 18px;
+gap: 14px;
+margin-top: 16px;
 }
 
 .language-card {
-width: 100%;
-
-min-height: 82px;
-
-border-radius: 14px;
+min-height: 76px;
+border-radius: 13px;
 }
 
 .language-card span {
-font-size: 22px;
+font-size: 21px;
 }
 
 .contact {
-margin-top: 30px;
-
+margin-top: 26px;
 font-size: 16px;
 }
 
 footer {
-margin-top: 18px;
-
+margin-top: 16px;
 font-size: 13px;
 }
 }
-
 
 /* ===== VERY SMALL PHONES ===== */
 
 @media (max-width: 400px) {
 
 .page {
-padding-left: 12px;
-padding-right: 12px;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .welcome {
-font-size: 21px;
+font-size: 20px;
 }
 
 .language-card {
-min-height: 78px;
+min-height: 72px;
 }
 
 .language-card span {
-font-size: 21px;
+font-size: 20px;
 }
-
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <div class="top-line"></div>
 
-
 <main class="page">
-
 
 <div class="main-box">
 
@@ -385,49 +263,29 @@ class="hero-image"
 
 </div>
 
-
 <p class="welcome">
-Choose your language
+Select your language
 </p>
-
 
 <section class="language-grid">
 
-
-<a
-href="/en/"
-class="language-card"
->
+<a href="/en/" class="language-card">
 <span>English</span>
 </a>
 
-
-<a
-href="/ru/"
-class="language-card"
->
+<a href="/ru/" class="language-card">
 <span>Русский</span>
 </a>
 
-
-<a
-href="/zh-hk/"
-class="language-card"
->
+<a href="/zh-hk/" class="language-card">
 <span>香港中文</span>
 </a>
 
-
-<a
-href="/de/"
-class="language-card"
->
+<a href="/de/" class="language-card">
 <span>Deutsch</span>
 </a>
 
-
 </section>
-
 
 <div class="contact">
 
@@ -437,20 +295,12 @@ info@kiwiaus.com
 
 </div>
 
-
 <footer>
 © 2026 KiwiAus Business Australia
 </footer>
 
-
-</main>
-
-
-</body>
-
-</html>
-
 </main>
 
 </body>
+
 </html>
