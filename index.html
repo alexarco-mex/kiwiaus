@@ -130,21 +130,33 @@ body {
     transform: translateY(0);
 }
 
-.contact {
+.contact-grid {
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 16px;
+    max-width: 620px;
+    margin: 28px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
-.contact a {
-    color: #17476f;
+.contact-item {
+    display: block;
+    width: 100%;
     text-decoration: none;
-    font-weight: 500;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact a:hover {
-    color: #c58a28;
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(20, 50, 80, 0.10);
+}
+
+.contact-item img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -207,9 +219,11 @@ footer {
         font-weight: 500;
     }
 
-    .contact {
-        margin-top: 26px;
-        font-size: 16px;
+    .contact-grid {
+        width: 94%;
+        max-width: 100%;
+        margin-top: 22px;
+        gap: 8px;
     }
 
     footer {
@@ -295,13 +309,33 @@ Choose Your Language
 
 </section>
 
-<div class="contact">
+<section class="contact-grid">
 
-<a href="mailto:info@kiwiaus.com">
-info@kiwiaus.com
+<a href="mailto:info@kiwiaus.com" class="contact-item" aria-label="Email KiwiAus">
+<img src="sy/em.png" alt="info@kiwiaus.com">
 </a>
 
-</div>
+<a href="tel:+61413564200" class="contact-item" aria-label="Call KiwiAus">
+<img src="sy/ph.png" alt="+61 413 564 200">
+</a>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Sydney+NSW+2000+Australia"
+   class="contact-item"
+   target="_blank"
+   rel="noopener"
+   aria-label="Sydney Office">
+<img src="sy/sy.png" alt="Sydney Office, Sydney NSW 2000, Australia">
+</a>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Auckland+1010+New+Zealand"
+   class="contact-item"
+   target="_blank"
+   rel="noopener"
+   aria-label="Auckland Office">
+<img src="sy/au.png" alt="Auckland Office, Auckland 1010, New Zealand">
+</a>
+
+</section>
 
 <footer>
 © 2026 KiwiAus Business Australia
