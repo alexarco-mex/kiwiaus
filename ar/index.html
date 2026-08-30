@@ -12,7 +12,7 @@ content="width=device-width, initial-scale=1.0"
 
 <meta
 name="description"
-content="توفر KiwiAus حلولاً احترافية لتأسيس الشركات وهيكلتها ونقلها وإدارتها، إلى جانب الدعم التجاري المستمر في أستراليا ونيوزيلندا للعملاء الدوليين والشركاء المهنيين."
+content="تقدم KiwiAus حلولاً احترافية لتأسيس الشركات وهيكلتها ونقلها وإدارتها ودعم الأعمال المستمر في أستراليا ونيوزيلندا للعملاء الدوليين والشركاء المهنيين."
 >
 
 <title>
@@ -35,37 +35,6 @@ margin: 0;
 background: #f6f8fa;
 color: #172033;
 font-family: Arial, Helvetica, sans-serif;
-}
-
-html[dir="rtl"] body {
-    direction: rtl;
-}
-
-html[dir="rtl"] .hero-audience,
-html[dir="rtl"] .section,
-html[dir="rtl"] .feature-box,
-html[dir="rtl"] .coming-service-content {
-    text-align: right;
-}
-
-html[dir="rtl"] .section-label {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-}
-
-html[dir="rtl"] .model-card.featured {
-    border-left: 1px solid #c58a28;
-    border-right: 8px solid #c58a28;
-}
-
-html[dir="rtl"] .feature-box {
-    border-left: 1px solid #dfe4e9;
-    border-right: 7px solid #c58a28;
-}
-
-html[dir="rtl"] .coming-service {
-    border-left: 1px solid #dfe4e9;
-    border-right: 6px solid #c58a28;
 }
 
 
@@ -866,6 +835,59 @@ margin: 10px auto;
 
 }
 
+
+/* =========================
+ARABIC / RTL
+========================= */
+
+body {
+    direction: rtl;
+}
+
+.hero-audience,
+.section,
+.country-card,
+.model-content,
+.included-card,
+.feature-box,
+.coming-service-content,
+.closing,
+.legal-note {
+    text-align: right;
+}
+
+.feature-box {
+    border-left: 1px solid #dfe4e9;
+    border-right: 7px solid #c58a28;
+}
+
+.model-card.featured {
+    border-left: 1px solid #c58a28;
+    border-right: 8px solid #c58a28;
+}
+
+.coming-service {
+    border-left: 1px solid #dfe4e9;
+    border-right: 6px solid #c58a28;
+}
+
+.section-label::before {
+    order: 2;
+}
+
+.language-menu,
+.hero,
+.contact-section,
+footer {
+    text-align: center;
+}
+
+.contact-button,
+.language-menu a {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
 </style>
 
 </head>
@@ -873,852 +895,233 @@ margin: 10px auto;
 
 <body>
 
-
 <nav class="language-menu">
-
-<a href="/en/">
-English
-</a>
-
-<a href="/ru/">
-Русский
-</a>
-
-<a href="/zh-hk/">
-香港中文
-</a>
-
-<a href="/de/">
-Deutsch
-</a>
-
-<a href="/uk/">
-Українська
-</a>
-
-<a href="/ar/" class="active">
-العربية
-</a>
-
+<a href="/en/">English</a>
+<a href="/ru/">Русский</a>
+<a href="/uk/">Українська</a>
+<a href="/zh-hk/">香港中文</a>
+<a href="/de/">Deutsch</a>
+<a href="/ar/" class="active">العربية</a>
 </nav>
 
-
-
 <header class="hero">
-
-
 <img
 src="../IMG_3917.jpg"
-alt="KiwiAus أستراليا and نيوزيلندا Business Solutions"
+alt="KiwiAus حلول الأعمال في أستراليا ونيوزيلندا"
 class="main-logo"
 >
 
+<h1>نيوزيلندا وأستراليا</h1>
 
-<h1>
-نيوزيلندا وأستراليا
-</h1>
-
-
-<div class="hero-subtitle">
-حلول أعمال احترافية
-</div>
-
+<div class="hero-subtitle">حلول أعمال احترافية</div>
 
 <p class="hero-text">
-
-نساعد العملاء الدوليين والشركاء المهنيين على تأسيس الشركات والاستحواذ عليها وهيكلتها وتشغيلها في أستراليا ونيوزيلندا، مع دعم عملي من مرحلة التأسيس الأولى وحتى الإدارة المؤسسية المستمرة.
-
+نساعد العملاء الدوليين والشركاء المهنيين على تأسيس الشركات وشرائها وهيكلتها وتشغيلها في أستراليا ونيوزيلندا، مع دعم عملي يبدأ من مرحلة الإعداد الأولى ويستمر مع الإدارة المؤسسية والمتطلبات التشغيلية اللاحقة.
 </p>
-
-
 
 <div class="hero-audience">
-
-
-<div class="hero-audience-label">
-مع من نعمل
-</div>
-
+<div class="hero-audience-label">من نخدم</div>
 
 <h2>
-
 حلول للعملاء الدوليين
 <span>والشركاء المهنيين.</span>
-
 </h2>
 
-
 <p>
-
 نعمل مع رواد الأعمال والشركات الدولية والمستثمرين والمستشارين المهنيين الراغبين في دخول أسواق أستراليا ونيوزيلندا.
-
 </p>
 
-
 <div class="hero-audience-grid">
-
-
-<div class="hero-audience-item">
-<span>✓</span>
-رواد الأعمال والشركات الناشئة
+<div class="hero-audience-item"><span>✓</span>رواد الأعمال والشركات الناشئة</div>
+<div class="hero-audience-item"><span>✓</span>شركات تقنية المعلومات والبرمجيات</div>
+<div class="hero-audience-item"><span>✓</span>التجارة الإلكترونية والأعمال عبر الإنترنت</div>
+<div class="hero-audience-item"><span>✓</span>الاستشارات والخدمات المهنية</div>
+<div class="hero-audience-item"><span>✓</span>الاستيراد والتصدير والتجارة الدولية</div>
+<div class="hero-audience-item"><span>✓</span>مشاريع التكنولوجيا والتقنية المالية</div>
+<div class="hero-audience-item"><span>✓</span>الشركات الدولية والمستثمرون</div>
+<div class="hero-audience-item"><span>✓</span>المحامون والمحاسبون وشركاء خدمات الشركات</div>
 </div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-شركات تقنية المعلومات والبرمجيات
 </div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-شركات التجارة الإلكترونية والأعمال عبر الإنترنت
-</div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-الاستشارات والخدمات المهنية
-</div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-الاستيراد والتصدير والتجارة الدولية
-</div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-مشاريع التكنولوجيا المالية والتقنية
-</div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-الشركات والمستثمرون الدوليون
-</div>
-
-<div class="hero-audience-item">
-<span>✓</span>
-المحامون والمحاسبون وشركاء خدمات الشركات
-</div>
-
-
-</div>
-
-</div>
-
 </header>
-
-
 
 <main class="content">
 
-
-<!-- =========================
-WHO WE ARE
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-من نحن
-</div>
-
-
+<div class="section-label">من نحن</div>
 <h2 class="section-heading">
-
 أكثر من مجرد
-<span class="gold-text">
-تأسيس شركات.
-</span>
-
+<span class="gold-text">تأسيس شركة.</span>
 </h2>
-
-
 <p class="section-text">
-
-تتمتع KiwiAus بخبرة عملية تتجاوز عشر سنوات في تأسيس الشركات وهيكلتها ودعم الأعمال في أستراليا ونيوزيلندا. نساعد العملاء على إنشاء هياكل مؤسسية عملية ونواصل دعمهم مع تطور أعمالهم.
-
+تتمتع KiwiAus بخبرة عملية تزيد على عشر سنوات في تأسيس الشركات وهيكلتها ودعم الأعمال في أستراليا ونيوزيلندا. نساعد العملاء على إنشاء هياكل مؤسسية عملية ونواصل دعمهم مع تطور أعمالهم.
 </p>
-
-
 <div class="benefits">
-
-
-<div class="benefit">
-
-<span class="check">✓</span>
-
-<p>
-أكثر من 10 سنوات من الخبرة العملية مع الشركات الأسترالية والنيوزيلندية.
-</p>
-
+<div class="benefit"><span class="check">✓</span><p>أكثر من 10 سنوات من الخبرة العملية في التعامل مع الشركات الأسترالية والنيوزيلندية.</p></div>
+<div class="benefit"><span class="check">✓</span><p>دعم مباشر خلال تأسيس الشركة وإعداد هيكلها وتنفيذ تغييرات الملكية المعتمدة.</p></div>
+<div class="benefit"><span class="check">✓</span><p>إعداد احترافي للوثائق والسجلات المؤسسية للعملاء الدوليين والشركاء المهنيين.</p></div>
+<div class="benefit"><span class="check">✓</span><p>حلول مصممة وفقاً لطبيعة النشاط التجاري وهيكل الملكية والأهداف التجارية المقصودة.</p></div>
 </div>
-
-
-<div class="benefit">
-
-<span class="check">✓</span>
-
-<p>
-دعم مباشر طوال مراحل تأسيس الشركة، وإعداد الهيكل المؤسسي، وتغييرات الملكية المعتمدة.
-</p>
-
-</div>
-
-
-<div class="benefit">
-
-<span class="check">✓</span>
-
-<p>
-إعداد مستندات مؤسسية احترافية للعملاء الدوليين والشركاء المهنيين.
-</p>
-
-</div>
-
-
-<div class="benefit">
-
-<span class="check">✓</span>
-
-<p>
-حلول مصممة وفقاً لنشاط العمل المقصود وهيكل الملكية والأهداف التجارية.
-</p>
-
-</div>
-
-
-</div>
-
 </section>
 
-
-
-<!-- =========================
-AUSTRALIA + NZ
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-سوقان
-</div>
-
-
+<div class="section-label">سوقان</div>
 <h2 class="section-heading">
-
 شريك واحد.
-<span class="gold-text">
-أستراليا ونيوزيلندا.
-</span>
-
+<span class="gold-text">أستراليا ونيوزيلندا.</span>
 </h2>
-
-
 <p class="section-text">
-
-احصل على خدمات احترافية لتأسيس الشركات ودعمها في أستراليا ونيوزيلندا من خلال علاقة عمل واحدة.
-
+احصل على خدمات احترافية لتأسيس الشركات والدعم المؤسسي في أستراليا ونيوزيلندا من خلال علاقة عمل واحدة.
 </p>
-
-
 <div class="country-grid">
-
-
 <article class="country-card">
-
-
-<div class="country-label">
-أستراليا
-</div>
-
-
-<h3>
-أسترالياn Company Solutions
-</h3>
-
-
+<div class="country-label">أستراليا</div>
+<h3>حلول الشركات الأسترالية</h3>
 <p>
-
-أسترالياn Pty Ltd company formation, ACN and ABN support,
-corporate documentation, company changes, address services,
-ownership transfers and ongoing corporate administration.
-
+تأسيس شركات Pty Ltd الأسترالية، ودعم طلبات ACN وABN، وإعداد الوثائق المؤسسية، وتنفيذ تغييرات الشركة، وخدمات العنوان، ونقل الملكية، والإدارة المؤسسية المستمرة.
 </p>
-
-
 </article>
-
-
-
 <article class="country-card">
-
-
-<div class="country-label">
-نيوزيلندا
-</div>
-
-
-<h3>
-نيوزيلندا Company Solutions
-</h3>
-
-
+<div class="country-label">نيوزيلندا</div>
+<h3>حلول الشركات النيوزيلندية</h3>
 <p>
-
-نيوزيلندا company formation, NZBN and Companies Register support,
-director and shareholder documentation, registered office services,
-company changes and ongoing corporate administration.
-
+تأسيس الشركات في نيوزيلندا، ودعم NZBN وسجل الشركات، ووثائق المديرين والمساهمين، وخدمات المكتب المسجل، وتغييرات الشركة، والإدارة المؤسسية المستمرة.
 </p>
-
-
 </article>
-
-
 </div>
-
 </section>
 
-
-
-<!-- =========================
-FORMATION OPTIONS
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-حلول الشركات
-</div>
-
-
+<div class="section-label">حلول الشركات</div>
 <h2 class="section-heading">
-
 اختر
-<span class="gold-text">
-هيكل الشركة المناسب.
-</span>
-
+<span class="gold-text">هيكل الشركة المناسب.</span>
 </h2>
-
-
 <p class="section-text">
-
-يعتمد الهيكل المناسب على أهداف العميل ونشاطه التجاري ومتطلبات الملكية ومدى جاهزية المستندات.
-
+يعتمد الهيكل المناسب على أهداف العميل وطبيعة نشاطه التجاري ومتطلبات الملكية ومدى جاهزية المستندات.
 </p>
-
-
 <div class="model-list">
-
-
 <article class="model-card">
-
-
-<div class="model-number">
-01
-</div>
-
-
+<div class="model-number">01</div>
 <div class="model-content">
-
-
-<h3>
-تأسيس شركة جديدة للعميل
-</h3>
-
-
+<h3>تأسيس شركة جديدة للعميل</h3>
 <p>
-
-A new أسترالياn or نيوزيلندا company is established using
-the approved client structure and relevant director and shareholder
-information.
-
+يتم تأسيس شركة جديدة في أستراليا أو نيوزيلندا وفق الهيكل المعتمد للعميل وباستخدام بيانات المديرين والمساهمين ذات الصلة.
 </p>
-
-
 <p>
-
-تنسق KiwiAus عملية التأسيس، وتعد المستندات المؤسسية المتفق عليها، وتقدم الدعم خلال المراحل الرئيسية لإعداد الشركة.
-
+تنسق KiwiAus عملية التأسيس، وتعد الوثائق المؤسسية المتفق عليها، وتقدم الدعم خلال المراحل الرئيسية لإعداد الشركة.
 </p>
-
-
-<div class="model-note">
-
-مناسب للعملاء الذين يرغبون في شركة جديدة يتم هيكلتها وفقاً لأنشطتهم التجارية المقصودة.
-
+<div class="model-note">مناسب للعملاء الذين يرغبون في شركة جديدة يتم تنظيمها وفق أنشطتهم التجارية المقصودة.</div>
 </div>
-
-
-</div>
-
 </article>
-
-
 
 <article class="model-card featured">
-
-
-<div class="model-number">
-02
-</div>
-
-
+<div class="model-number">02</div>
 <div class="model-content">
-
-
-<h3>
-حل شركة مُنشأة مسبقاً
-</h3>
-
-
+<h3>حل شركة مُنشأة مسبقاً</h3>
 <p>
-
-عندما يكون ذلك متاحاً ومناسباً، يمكن تأسيس الشركة وإعداد إطارها المؤسسي الأولي قبل استكمال تغييرات الملكية والمسؤولين المعتمدة.
-
+عندما يكون ذلك متاحاً ومناسباً، يمكن تأسيس الشركة وتجهيز إطارها المؤسسي الأولي قبل إتمام تغييرات الملكية والمناصب المعتمدة للعميل.
 </p>
-
-
 <p>
-
-يتم إعداد سجلات الشركة والقرارات والمستندات المؤسسية الداعمة كجزء من عملية منظمة للإكمال أو النقل.
-
+يتم إعداد سجلات الشركة والقرارات والوثائق المؤسسية الداعمة كجزء من عملية إتمام أو نقل منظمة.
 </p>
-
-
-<div class="model-note">
-
-مناسب للعملاء المعتمدين الذين يحتاجون إلى إعداد أكثر شمولاً للشركة مع إطار مؤسسي قائم ومستندات داعمة.
-
+<div class="model-note">مناسب للعملاء المعتمدين الذين يحتاجون إلى إعداد أكثر شمولاً للشركة مع إطار مؤسسي قائم ووثائق داعمة.</div>
 </div>
-
-
-</div>
-
 </article>
-
-
 </div>
-
 </section>
 
-
-
-<!-- =========================
-WHAT WE PROVIDE
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-ما نقدمه
-</div>
-
-
+<div class="section-label">ما نقدمه</div>
 <h2 class="section-heading">
-
 دعم عملي من
-<span class="gold-text">
-التأسيس إلى التشغيل.
-</span>
-
+<span class="gold-text">الإعداد إلى التشغيل.</span>
 </h2>
-
-
 <p class="section-text">
-
-يتم تحديد نطاق الخدمة وفق الولاية القضائية والهيكل المؤسسي ونشاط العمل والمتطلبات العملية لكل عميل.
-
+يتم تحديد نطاق الخدمة بدقة وفق الدولة والهيكل المؤسسي وطبيعة النشاط التجاري والمتطلبات العملية لكل عميل.
 </p>
-
-
 <div class="included-grid">
-
-
-<article class="included-card">
-
-<div class="included-icon">
-🏢
+<article class="included-card"><div class="included-icon">🏢</div><h3>تأسيس الشركات</h3><p>تأسيس الشركات في أستراليا ونيوزيلندا وإعداد وثائق التأسيس الرئيسية.</p></article>
+<article class="included-card"><div class="included-icon">📄</div><h3>الوثائق المؤسسية</h3><p>سجلات الشركة ووثائق الأسهم والقرارات وغيرها من السجلات المؤسسية المشمولة ضمن الحل المتفق عليه.</p></article>
+<article class="included-card"><div class="included-icon">✓</div><h3>التسجيلات التجارية</h3><p>دعم التسجيلات المتعلقة بالشركة والنشاط التجاري حيثما تنطبق على الهيكل المختار.</p></article>
+<article class="included-card"><div class="included-icon">↔</div><h3>تغييرات الملكية والشركة</h3><p>تغييرات المديرين والمساهمين والملكية مع إعداد الوثائق المؤسسية الداعمة.</p></article>
+<article class="included-card"><div class="included-icon">✉</div><h3>المكتب المسجل والعنوان</h3><p>خدمات المكتب المسجل وعنوان العمل والمراسلات عندما تكون مشمولة ضمن الباقة المتفق عليها.</p></article>
+<article class="included-card"><div class="included-icon">🌏</div><h3>الدعم المؤسسي المستمر</h3><p>مساعدة عملية بعد تأسيس الشركة أو نقلها، بما في ذلك التغييرات المؤسسية اللاحقة والإدارة المستمرة.</p></article>
 </div>
-
-<h3>
-تأسيس الشركات
-</h3>
-
-<p>
-أسترالياn and نيوزيلندا company establishment
-and principal incorporation documentation.
-</p>
-
-</article>
-
-
-
-<article class="included-card">
-
-<div class="included-icon">
-📄
-</div>
-
-<h3>
-المستندات المؤسسية
-</h3>
-
-<p>
-سجلات الشركة ومستندات الأسهم والقرارات وغيرها من السجلات المؤسسية المشمولة في الخدمة المتفق عليها.
-</p>
-
-</article>
-
-
-
-<article class="included-card">
-
-<div class="included-icon">
-✓
-</div>
-
-<h3>
-تسجيلات الأعمال
-</h3>
-
-<p>
-دعم التسجيلات ذات الصلة بالشركة والأعمال حيثما ينطبق ذلك على الهيكل المختار.
-</p>
-
-</article>
-
-
-
-<article class="included-card">
-
-<div class="included-icon">
-↔
-</div>
-
-<h3>
-تغييرات الملكية والشركة
-</h3>
-
-<p>
-تغييرات المديرين والمساهمين والملكية مع المستندات المؤسسية الداعمة.
-</p>
-
-</article>
-
-
-
-<article class="included-card">
-
-<div class="included-icon">
-✉
-</div>
-
-<h3>
-المكتب المسجل والعنوان
-</h3>
-
-<p>
-خدمات المكتب المسجل وعنوان الأعمال والمراسلات عندما تكون مشمولة في الخدمة المتفق عليها.
-</p>
-
-</article>
-
-
-
-<article class="included-card">
-
-<div class="included-icon">
-🌏
-</div>
-
-<h3>
-الدعم المؤسسي المستمر
-</h3>
-
-<p>
-دعم عملي بعد تأسيس الشركة أو نقلها، بما في ذلك التغييرات المؤسسية اللاحقة والإدارة المستمرة.
-</p>
-
-</article>
-
-
-</div>
-
 </section>
 
-
-
-<!-- =========================
-MANAGED CORPORATE SERVICES
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-الخدمات المؤسسية المُدارة
-</div>
-
-
+<div class="section-label">الخدمات المؤسسية المُدارة</div>
 <div class="feature-box">
-
-
-<h2>
-أكثر من مجرد تأسيس شركة.
-</h2>
-
-
+<h2>أكثر من مجرد تأسيس شركة.</h2>
 <p>
-
-For approved international clients requiring a higher level of
-local support, KiwiAus can provide or coordinate enhanced corporate
-administration, local representation, director support, company changes
-and ongoing operational assistance in أستراليا and نيوزيلندا,
-where legally permitted and subject to applicable requirements.
-
+للعملاء الدوليين المعتمدين الذين يحتاجون إلى مستوى أعلى من الدعم المحلي، يمكن لـ KiwiAus تقديم أو تنسيق إدارة مؤسسية موسعة، وتمثيل محلي، ودعم المديرين، وتغييرات الشركة، والمساعدة التشغيلية المستمرة في أستراليا ونيوزيلندا، حيثما يسمح القانون وبما يخضع للمتطلبات المعمول بها.
 </p>
-
-
 </div>
-
 </section>
 
-
-
-<!-- =========================
-INTERNATIONAL PARTNERS
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-الشراكات الدولية
-</div>
-
-
+<div class="section-label">الشراكات الدولية</div>
 <div class="feature-box">
-
-
-<h2>
-Offer أستراليا & نيوزيلندا solutions to your clients.
-</h2>
-
-
+<h2>قدّم حلول أستراليا ونيوزيلندا لعملائك.</h2>
 <p>
-
-KiwiAus welcomes cooperation with company formation firms,
-corporate service providers, accountants, consultants, lawyers
-and professional advisers worldwide. We can operate as your
-أسترالياn and نيوزيلندا corporate services partner, providing
-local infrastructure, company setup and ongoing support while
-you maintain your own client relationship.
-
+ترحب KiwiAus بالتعاون مع شركات تأسيس الشركات ومقدمي الخدمات المؤسسية والمحاسبين والاستشاريين والمحامين والمستشارين المهنيين حول العالم. ويمكننا العمل كشريكك في خدمات الشركات بأستراليا ونيوزيلندا، وتوفير البنية المحلية وإعداد الشركات والدعم المستمر، بينما تحافظ أنت على علاقتك المباشرة مع عميلك.
 </p>
-
-
 </div>
-
 </section>
 
-
-
-<!-- =========================
-NZ TRUST STRUCTURES
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-نيوزيلندا structures
-</div>
-
-
+<div class="section-label">هياكل نيوزيلندا</div>
 <div class="feature-box">
-
-
-<h2>
-نيوزيلندا Trust & Corporate Structures
-</h2>
-
-
+<h2>الصناديق الاستئمانية والهياكل المؤسسية في نيوزيلندا</h2>
 <p>
-
-Support with selected نيوزيلندا trust and corporate structures
-for international clients, including establishment coordination,
-documentation, registration support and ongoing administration
-where appropriate and subject to applicable legal, tax and
-professional requirements.
-
+دعم مجموعة مختارة من هياكل الصناديق الاستئمانية والهياكل المؤسسية في نيوزيلندا للعملاء الدوليين، بما في ذلك تنسيق الإنشاء، وإعداد الوثائق، ودعم التسجيل، والإدارة المستمرة عند الاقتضاء، مع مراعاة المتطلبات القانونية والضريبية والمهنية المعمول بها.
 </p>
-
-
 </div>
-
 </section>
 
-
-
-<!-- =========================
-IMMIGRATION
-========================= -->
-
-
 <section class="section">
-
-
-<div class="section-label">
-حلول إضافية
-</div>
-
-
+<div class="section-label">حلول إضافية</div>
 <div class="coming-service">
-
-
-<div class="coming-service-icon">
-✦
-</div>
-
-
+<div class="coming-service-icon">✦</div>
 <div class="coming-service-content">
-
-
-<span class="coming-service-label">
-خدمة بدعم من شركائنا
-</span>
-
-
-<h3>
-دعم الهجرة
-</h3>
-
-
+<span class="coming-service-label">خدمة بدعم من شركائنا</span>
+<h3>دعم الهجرة</h3>
 <p>
-
-Where clients require immigration assistance connected with أستراليا,
-KiwiAus can coordinate access to relevant professional support.
-Immigration advice is provided only where legally permitted
-by appropriately qualified professionals.
-
+عندما يحتاج العملاء إلى مساعدة في مسائل الهجرة المرتبطة بأستراليا، يمكن لـ KiwiAus تنسيق الوصول إلى الدعم المهني المناسب. ولا يتم تقديم استشارات الهجرة إلا حيثما يسمح القانون ومن خلال مهنيين مؤهلين بالشكل المطلوب.
 </p>
-
-
 </div>
-
 </div>
-
 </section>
-
-
-
-<!-- =========================
-CLOSING
-========================= -->
-
 
 <section class="closing">
-
-
-<div class="closing-label">
-نهج KiwiAus
-</div>
-
-
+<div class="closing-label">منهج KiwiAus</div>
 <h2>
-
-Establish. Structure. Operate.
-أستراليا & نيوزيلندا.
-
+تأسيس. هيكلة. تشغيل.<br>
+أستراليا ونيوزيلندا.
 </h2>
-
-
 <p>
-
-Our work goes beyond submitting a company registration.
-We focus on creating practical corporate structures,
-preparing professional documentation and providing ongoing
-support as the business develops in أستراليا or نيوزيلندا.
-
+يتجاوز عملنا مجرد تقديم طلب تسجيل شركة. نركز على إنشاء هياكل مؤسسية عملية، وإعداد وثائق احترافية، وتوفير دعم مستمر مع تطور الأعمال في أستراليا أو نيوزيلندا.
 </p>
-
-
 </section>
-
-
 
 <p class="legal-note">
-
-تظل عمليات تأسيس الشركات والتعيينات وخدمات المديرين وتغييرات الملكية والخدمات المتعلقة بالصناديق الائتمانية وغيرها من الحلول المؤسسية خاضعة للقوانين المعمول بها، والمعلومات المطلوبة، وفحوصات الهوية والامتثال، والإجراءات الحكومية، والاستشارات المهنية عند الحاجة، ومتطلبات مقدمي الخدمات الخارجيين ذوي الصلة.
-
+تظل عمليات تأسيس الشركات والتعيينات وخدمات المديرين وتغييرات الملكية والخدمات المتعلقة بالصناديق الاستئمانية وغيرها من الحلول المؤسسية خاضعة للقوانين المعمول بها، والمعلومات المطلوبة، وفحوصات الهوية والامتثال، والإجراءات الحكومية، والاستشارات المهنية عند الحاجة، ومتطلبات مقدمي الخدمات الخارجيين ذوي الصلة.
 </p>
-
-
-
-<!-- =========================
-CONTACT
-========================= -->
-
 
 <section class="contact-section">
-
-
-<h2>
-ناقش الحل المناسب لأعمالك
-</h2>
-
-
+<h2>ناقش الحل المناسب لأعمالك</h2>
 <p>
-
-Tell us whether you need an أسترالياn company,
-a نيوزيلندا company, a managed corporate solution
-or professional support across both markets.
-
+أخبرنا ما إذا كنت تحتاج إلى شركة أسترالية، أو شركة نيوزيلندية، أو حلاً مؤسسياً مُداراً، أو دعماً مهنياً عبر كلا السوقين.
 </p>
-
-
-<a
-href="mailto:info@kiwiaus.com"
-class="contact-button"
->
-✉ تواصل معنا عبر البريد الإلكتروني
-</a>
-
-
-<a
-href="https://wa.me/61413564200"
-class="contact-button gold"
->
-WhatsApp: +61 413 564 200
-</a>
-
-
+<a href="mailto:info@kiwiaus.com" class="contact-button">✉ تواصل معنا عبر البريد الإلكتروني</a>
+<a href="https://wa.me/61413564200" class="contact-button gold">WhatsApp: +61 413 564 200</a>
 </section>
-
 
 </main>
 
-
-
 <footer>
-
-© 2026 KiwiAus أستراليا & نيوزيلندا.
-جميع الحقوق محفوظة.
-
+© 2026 KiwiAus أستراليا ونيوزيلندا. جميع الحقوق محفوظة.
 </footer>
 
-
 </body>
-
 </html>
